@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/clienteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cliente"/>
+
+    <EditText
+        android:id="@+id/numContaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/clienteEditText"
+        android:hint="Número da Conta"/>
+
+    <EditText
+        android:id="@+id/saldoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numContaEditText"
+        android:hint="Saldo"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/saldoEditText">
+
+        <RadioButton
+            android:id="@+id/poupancaRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conta Poupança"/>
+
+        <RadioButton
+            android:id="@+id/especialRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conta Especial"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/valorEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:hint="Valor"/>
+
+    <Button
+        android:id="@+id/criarContaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valorEditText"
+        android:layout_centerHorizontal="true"
+        android:text="Criar Conta"/>
+
+    <Button
+        android:id="@+id/sacarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/criarContaButton"
+        android:layout_centerHorizontal="true"
+        android:text="Sacar"/>
+
+    <Button
+        android:id="@+id/depositarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sacarButton"
+        android:layout_centerHorizontal="true"
+        android:text="Depositar"/>
+
+</RelativeLayout>
